@@ -10,7 +10,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const apiKey = "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";
+  const apiKey = process.env.OPENAI_API;
   const url = "https://api.openai.com/v1/completions";
 
   const extractKeywords = async (text) => {
